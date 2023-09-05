@@ -17,5 +17,6 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "prettier": "@vercel/style-guide/prettier"
 }
