@@ -39,5 +39,7 @@ module.exports = {
   rules: {
     "import/no-default-export": "off",
     "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
   },
 };
