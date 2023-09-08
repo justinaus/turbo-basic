@@ -20,6 +20,7 @@ module.exports = {
     '@vercel/style-guide/eslint/next',
     'eslint-config-turbo',
   ].map(require.resolve),
+  plugins: ['unused-imports'],
   parserOptions: {
     project,
   },
@@ -42,5 +43,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
+    'unused-imports/no-unused-imports': 'warn',
   },
 };
