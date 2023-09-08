@@ -1,11 +1,10 @@
-"use client";
-
 export function Button(): JSX.Element {
   return (
     <button
-      onClick={(): void => {
-        // eslint-disable-next-line no-alert -- alert is being used for demo purposes only
-        alert("booped");
+      css={{
+        padding: 20,
+        borderRadius: 4,
+        backgroundColor: 'hotpink',
       }}
       type="button"
     >
