@@ -1,4 +1,23 @@
-:root {
+@import 'reset.css';
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+/* Avoid Chrome to see Safari hack */
+@supports (-webkit-touch-callout: none) {
+  .min-height-100vh {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +123,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
