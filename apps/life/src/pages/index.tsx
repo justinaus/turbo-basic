@@ -2,7 +2,10 @@ import Head from 'next/head';
 import { Button } from 'ui';
 import { useEffect } from 'react';
 import { getRandomHex } from 'utils';
+import { useSetRecoilState } from 'recoil';
 import { suitExtraBold } from '@/fonts/suitExtraBold';
+import Count from '@/components/home/Count';
+import { CountState } from '@/components/home/countState';
 
 export default function Home() {
   useEffect(() => {
@@ -11,8 +14,10 @@ export default function Home() {
     console.log('hex', hex);
   }, []);
 
+  const setCount = useSetRecoilState(CountState);
+
   const onClick = () => {
-    console.log('click');
+    setCount((oldValue) => oldValue + 1);
   };
 
   return (
@@ -40,6 +45,7 @@ export default function Home() {
           어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
           적립 · QR 결제
         </div>
+        <Count />
       </>
     </>
   );
