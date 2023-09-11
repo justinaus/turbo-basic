@@ -11,6 +11,10 @@ export default function Home() {
     console.log('hex', hex);
   }, []);
 
+  const onClick = () => {
+    console.log('click');
+  };
+
   return (
     <>
       <Head>
@@ -20,7 +24,14 @@ export default function Home() {
         <link href="/favicon.ico" rel="icon" />
       </Head>
       <>
-        <Button />
+        <Button
+          css={{
+            backgroundColor: 'green',
+          }}
+          onClick={onClick}
+        >
+          Click!!
+        </Button>
         <div>
           어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
           적립 · QR 결제

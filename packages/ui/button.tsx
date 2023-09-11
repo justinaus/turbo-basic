@@ -1,4 +1,10 @@
-export function Button(): JSX.Element {
+type Props = React.ClassAttributes<HTMLButtonElement> &
+  React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export function Button({
+  children,
+  ...rest
+}: React.PropsWithChildren<Props>): JSX.Element {
   return (
     <button
       css={{
@@ -7,8 +13,9 @@ export function Button(): JSX.Element {
         backgroundColor: 'hotpink',
       }}
       type="button"
+      {...rest}
     >
-      Boop
+      {children}
     </button>
   );
 }
