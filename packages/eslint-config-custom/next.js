@@ -45,5 +45,6 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': 'off',
     'unused-imports/no-unused-imports': 'warn',
     'no-console': 'warn',
+    'unicorn/filename-case': 'off',
   },
 };
