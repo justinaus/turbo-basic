@@ -37,5 +37,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'no-console': 'warn',
     'prefer-named-capture-group': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
   },
 };

@@ -46,5 +46,6 @@ module.exports = {
     'unused-imports/no-unused-imports': 'warn',
     'no-console': 'warn',
     'unicorn/filename-case': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
   },
 };
