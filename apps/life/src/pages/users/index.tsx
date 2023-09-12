@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
+import Skeleton from 'react-loading-skeleton';
 import { Button } from 'ui';
 
 const List = dynamic(() => import('@/components/users/List'), {
@@ -41,7 +42,7 @@ export default function Users() {
             )}
             onReset={reset}
           >
-            <Suspense fallback={<div>loading</div>}>
+            <Suspense fallback={<Skeleton count={10} />}>
               <List />
             </Suspense>
           </ErrorBoundary>
