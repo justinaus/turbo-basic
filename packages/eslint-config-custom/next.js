@@ -20,7 +20,7 @@ module.exports = {
     '@vercel/style-guide/eslint/next',
     'eslint-config-turbo',
   ].map(require.resolve),
-  plugins: ['unused-imports'],
+  plugins: ['unused-imports', 'simple-import-sort'],
   parserOptions: {
     project,
   },
@@ -44,8 +44,14 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
     'unused-imports/no-unused-imports': 'warn',
+    'simple-import-sort/imports': 'warn',
+    'simple-import-sort/exports': 'warn',
     'no-console': 'warn',
     'unicorn/filename-case': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
+    'import/order': 'off',
+    'eslint-comments/require-description': 'off',
+    'react/jsx-no-leaked-render': 'off',
+    'react/jsx-sort-props': 'off',
   },
 };

@@ -34,9 +34,11 @@ module.exports = {
   ignorePatterns: ['node_modules/', 'dist/', '.eslintrc.js'],
 
   rules: {
+    'unicorn/filename-case': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     'no-console': 'warn',
     'prefer-named-capture-group': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/consistent-type-definitions': 'off',
   },
 };
