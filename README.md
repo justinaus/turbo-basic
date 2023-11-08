@@ -18,7 +18,7 @@ yarn dev
 
 ### Apps and Packages
 
-- `life`: a [Next.js](https://nextjs.org/) app
+- `web-service`: web service app
 - `jds`: justinaus design system
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -33,4 +33,4 @@ Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 - Emotion css props..
 - React-query
 - Recoil
-- 등..
+- etc..
