@@ -6,7 +6,6 @@ import { getRandomHex } from 'utils';
 
 import Count from '@/components/home/Count';
 import { CountState } from '@/components/home/countState';
-import { suitExtraBold } from '@/fonts/suitExtraBold';
 
 export default function Home() {
   useEffect(() => {
@@ -42,7 +41,11 @@ export default function Home() {
           어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
           적립 · QR 결제
         </div>
-        <div className={suitExtraBold.className}>
+        <div
+          css={{
+            fontWeight: 800,
+          }}
+        >
           어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
           적립 · QR 결제
         </div>

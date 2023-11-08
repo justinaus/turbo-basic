@@ -11,7 +11,7 @@ import { DefaultSeo } from 'next-seo';
 import { RecoilRoot } from 'recoil';
 
 import AppLayout from '@/components/layout/AppLayout';
-import { suitRegular } from '@/fonts/suitRegular';
+import { suit } from '@/fonts/suit';
 import { queryClient } from '@/helpers/query';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <QueryClientProvider client={queryClient}>
         <RecoilRoot>
           <Global styles={emotionReset} />
-          <AppLayout className={suitRegular.className}>
+          <AppLayout className={suit.className}>
             <Seo />
             <Component {...pageProps} />
           </AppLayout>
