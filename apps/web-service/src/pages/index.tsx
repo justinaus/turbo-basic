@@ -1,4 +1,4 @@
-import { Button } from 'jds';
+import { FilledButton } from 'jds';
 import Head from 'next/head';
 import { useEffect } from 'react';
 import { useSetRecoilState } from 'recoil';
@@ -29,14 +29,15 @@ export default function Home() {
         {/* <link href="/favicon.ico" rel="icon" /> */}
       </Head>
       <>
-        <Button
+        <FilledButton
+          size="large"
           css={{
             backgroundColor: 'green',
           }}
           onClick={onClick}
         >
           Click!!
-        </Button>
+        </FilledButton>
         <div>
           어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
           적립 · QR 결제

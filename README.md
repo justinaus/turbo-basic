@@ -1,6 +1,6 @@
-# Turborepo test
+# Turborepo emotion realworld example
 
-Turborepo test
+Turborepo emotion css props realworld example.
 
 ## Demo
 
@@ -19,7 +19,7 @@ yarn dev
 ### Apps and Packages
 
 - `web-service`: web service app
-- `jds`: justinaus design system
+- `jds`: justinaus design system (⚠️ emotion에 종속적임)
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `utils`
