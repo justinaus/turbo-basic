@@ -7,6 +7,7 @@ import { getRandomHex } from 'utils';
 import Count from '@/components/home/Count';
 import { CountState } from '@/components/home/countState';
 import PageLayout from '@/components/layout/PageLayout';
+import FullWidthAutoHeightImage from '@/components/shared/image/FullWidthAutoHeightImage';
 
 export default function Home() {
   useEffect(() => {
@@ -35,15 +36,16 @@ export default function Home() {
           >
             Click!!
           </FilledButton>
-          <FilledButton
-            size="small"
-            css={{
-              backgroundColor: 'pink',
-            }}
-            onClick={onClick}
-          >
-            Click!!
-          </FilledButton>
+          <a href="/users">
+            <FilledButton
+              size="small"
+              css={{
+                backgroundColor: 'pink',
+              }}
+            >
+              Go Users page
+            </FilledButton>
+          </a>
           <div>
             어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
             적립 · QR 결제
@@ -57,6 +59,12 @@ export default function Home() {
             적립 · QR 결제
           </div>
           <Count />
+          <FullWidthAutoHeightImage
+            imageProps={{
+              src: '/1024.png',
+              alt: 'FUUUUULLL',
+            }}
+          />
         </main>
       </PageLayout>
     </>
