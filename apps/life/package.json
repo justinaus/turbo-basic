@@ -15,6 +15,7 @@
     "@suspensive/react-query": "^1.14.1",
     "@tanstack/react-query": "^4.35.0",
     "@tanstack/react-query-devtools": "^4.35.0",
+    "jds": "*",
     "next": "13.4.19",
     "next-intercept-stdout": "^1.0.1",
     "react": "18.2.0",
@@ -22,7 +23,6 @@
     "react-error-boundary": "^4.0.11",
     "react-loading-skeleton": "^3.3.1",
     "recoil": "^0.7.7",
-    "ui": "*",
     "utils": "*"
   },
   "devDependencies": {

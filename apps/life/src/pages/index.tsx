@@ -1,11 +1,12 @@
+import { Button } from 'jds';
 import Head from 'next/head';
-import { Button } from 'ui';
 import { useEffect } from 'react';
-import { getRandomHex } from 'utils';
 import { useSetRecoilState } from 'recoil';
-import { suitExtraBold } from '@/fonts/suitExtraBold';
+import { getRandomHex } from 'utils';
+
 import Count from '@/components/home/Count';
 import { CountState } from '@/components/home/countState';
+import { suitExtraBold } from '@/fonts/suitExtraBold';
 
 export default function Home() {
   useEffect(() => {

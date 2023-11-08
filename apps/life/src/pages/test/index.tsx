@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
+import { colors } from 'jds';
 import Head from 'next/head';
-import { colors } from 'ui';
 
 // https://emotion.sh/docs/best-practices#consider-defining-styles-outside-your-components
 const cardCss = {

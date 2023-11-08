@@ -4,7 +4,7 @@ const withInterceptStdout = require('next-intercept-stdout');
 
 const nextConfig = {
   reactStrictMode: false,
-  transpilePackages: ['ui'],
+  transpilePackages: ['jds'],
   compiler: {
     emotion: true,
   },

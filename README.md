@@ -19,7 +19,7 @@ yarn dev
 ### Apps and Packages
 
 - `life`: a [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by all applications
+- `jds`: justinaus design system
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `utils`
