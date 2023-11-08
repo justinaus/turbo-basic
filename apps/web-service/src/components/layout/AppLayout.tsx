@@ -1,3 +1,10 @@
-export default function AppLayout({ children }: React.PropsWithChildren) {
-  return <div>{children}</div>;
+type Props = {
+  className?: string;
+};
+
+export default function AppLayout({
+  children,
+  className,
+}: React.PropsWithChildren<Props>) {
+  return <div className={className}>{children}</div>;
 }
