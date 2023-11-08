@@ -1,4 +1,5 @@
 import { FilledButton } from 'jds';
+import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { useEffect } from 'react';
 import { useSetRecoilState } from 'recoil';
@@ -36,7 +37,7 @@ export default function Home() {
           >
             Click!!
           </FilledButton>
-          <a href="/users">
+          <Link href="/users">
             <FilledButton
               size="small"
               css={{
@@ -45,7 +46,7 @@ export default function Home() {
             >
               Go Users page
             </FilledButton>
-          </a>
+          </Link>
           <div>
             어제보다 4℃ 높아요 · Gift 카드 등록하기 · 최대 20% 캐시백 · 61,800P
             적립 · QR 결제
